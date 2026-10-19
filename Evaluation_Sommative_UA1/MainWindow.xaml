@@ -59,7 +59,7 @@
                     <TextBlock Text="Publier une nouvelle offre et consulter la liste des offres existantes" FontWeight="DemiBold" FontSize="12" Foreground="LightSlateGray"  />
 
                     <!-- FORMULAIRE -->
-                    <Grid Margin="0,5" Background="White">
+                    <Grid Margin="0,5" Background="White" Height="341">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
@@ -155,13 +155,13 @@
 
                         <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,5,5,15">
                             <TextBox x:Name="TxtDescription"
-                 Text="Décrivez les tâches, les responsabilités..."
-                 AcceptsReturn="True"             
-                 TextWrapping="Wrap"
-                 VerticalScrollBarVisibility="Auto"
-                 Padding="8"
-                 Height="70"
-                 VerticalContentAlignment="Top"/>
+                                 Text="Décrivez les tâches, les responsabilités..."
+                                 AcceptsReturn="True"             
+                                 TextWrapping="Wrap"
+                                 VerticalScrollBarVisibility="Auto"
+                                 Padding="8"
+                                 Height="70"
+                                 VerticalContentAlignment="Top"/>
                         </StackPanel>
                         <StackPanel Grid.Row="6" Grid.Column="2" Margin="5,5,5,15">
                             <TextBox x:Name="TxtNombreDePoste" Height="30" VerticalContentAlignment="Center" Padding="8,0,5,0"/>
@@ -173,7 +173,38 @@
                                 <ComboBoxItem Content="Fermé"/>
                             </ComboBox>
                         </StackPanel>
+
+                        <StackPanel Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2">
+                        </StackPanel>
+                        <StackPanel Grid.Row="7" Grid.Column="2" Margin="15 0">
+                            <Button  
+                                Content="Initialiser" 
+                                Height="35" 
+                                FontWeight="Bold"
+                                Background="Red" 
+                                Foreground="Black"
+                                IsEnabled="False" 
+                                Click="BtnPublier_Effacer" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="7" Grid.Column="3" >
+                            <Button x:Name="BtnPublier" 
+                                    Content="Publier" 
+                                    Height="35" 
+                                    FontWeight="Bold"
+                                    Background="#1F4466" 
+                                    Foreground="Black"
+                                    IsEnabled="False" 
+                                    Click="BtnPublier_Click"/>
+                        </StackPanel>
                     </Grid>
+
+                    <TextBlock x:Name="LblError" 
+                       Text="La date de début ne peut pas être supérieure à la date de fin." 
+                       Foreground="Red" 
+                       FontWeight="Bold" 
+                       Visibility="Collapsed" 
+                       TextWrapping="Wrap"/>
+
 
                     <!-- Liste des od=ffres de stage -->
                     <Grid Margin="0 5" Background="White">
