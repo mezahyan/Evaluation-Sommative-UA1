@@ -5,19 +5,64 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Evaluation_Sommative_UA1"
         mc:Ignorable="d"
+        Background="LightGray"
         Title="UA1 - Yannick Mezah F." Height="800" Width="800">
+    
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         
         <!-- Menu du haut -->
-        <StackPanel Grid.Row="0" Background="#1F4466">
-            
-        </StackPanel>
-        
-        <StackPanel Grid.Row="1" Background="Green">
+        <Border Grid.Row="0" Background="#102A45" Padding="10,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- SECTION GAUCHE : Logo et application -->
+                <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="StagestiCoop" 
+                       FontSize="16" 
+                       FontWeight="Bold" 
+                       Foreground="White" 
+                       VerticalAlignment="Center"/>
+                    <TextBlock Text=" - Gestion des stages coopératifs" 
+                       FontSize="14" 
+                       Foreground="#A2C2E1" 
+                       VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- SECTION DROITE : Année académique et Profil utilisateur -->
+                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+
+                    <!-- Bloc Année avec icône de calendrier -->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,25,0">
+                        <TextBlock Text="2025-2026" 
+                           FontSize="14" 
+                           Foreground="White" 
+                           VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <!-- Nom et Rôle de l'utilisateur -->
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock Text="Yannick Mezah" 
+                           FontSize="14" 
+                           FontWeight="SemiBold" 
+                           Foreground="White"/>
+                        <TextBlock Text="Etudiant" 
+                           FontSize="11" 
+                           Foreground="#A2C2E1"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </Grid>
+        </Border>
+
+
+        <StackPanel Grid.Row="1">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
@@ -54,7 +99,7 @@
                 </StackPanel>
 
                 <!-- Contenu Principale -->
-                <StackPanel Grid.Column="1" Background="Pink" Margin="5" >
+                <StackPanel Grid.Column="1" Margin="5" >
                     <TextBlock Text="Offres de stage" FontSize="26" FontWeight="Bold"/>
                     <TextBlock Text="Publier une nouvelle offre et consulter la liste des offres existantes" FontWeight="DemiBold" FontSize="12" Foreground="LightSlateGray"  />
 
@@ -274,7 +319,7 @@
                             <TextBlock Text="420" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <Border Grid.Row="1" Grid.Column="6" BorderBrush="#CCCCCC" BorderThickness="0,0,1,1">
-                            <TextBlock Text="Approuvé" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Green"/>
+                            <TextBlock Text="Approuvé" HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Border>
                         <Border Grid.Row="1" Grid.Column="7" BorderBrush="#CCCCCC" BorderThickness="0,0,1,1">
                             <Button Content="Détails" Height="22" Width="70"/>
