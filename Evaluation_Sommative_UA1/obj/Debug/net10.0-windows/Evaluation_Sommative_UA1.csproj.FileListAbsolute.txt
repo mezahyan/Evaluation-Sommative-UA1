@@ -1,0 +1,4 @@
+C:\Users\Mezah\Documents\Structure_données_appliquée\Evaluation_Sommative_UA1\Evaluation_Sommative_UA1\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\Mezah\Documents\Structure_données_appliquée\Evaluation_Sommative_UA1\Evaluation_Sommative_UA1\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\Mezah\Documents\Structure_données_appliquée\Evaluation_Sommative_UA1\Evaluation_Sommative_UA1\obj\Debug\net10.0-windows\Evaluation_Sommative_UA1_MarkupCompile.cache
+C:\Users\Mezah\Documents\Structure_données_appliquée\Evaluation_Sommative_UA1\Evaluation_Sommative_UA1\obj\Debug\net10.0-windows\Evaluation_Sommative_UA1_MarkupCompile.lref
