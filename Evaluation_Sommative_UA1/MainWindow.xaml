@@ -38,14 +38,14 @@
                             <TextBlock Text="Stages coopératifs" FontSize="14" FontWeight="Bold" Foreground="LightSlateGray" />
                         </StackPanel>
 
-                        <StackPanel Grid.Row="1">
+                        <StackPanel Grid.Row="1" >
                             <TextBlock Text="PRINCIPAL" FontSize="12" FontWeight="Bold" Foreground="LightSlateGray" Margin="0,0,0,5" />
                             <TextBlock Text="Offres de stage" Margin="0 5" FontSize="14" Foreground="White" />
                             <TextBlock Text="Etudiants" Margin="0 5" FontSize="14" Foreground="White" />
                             <TextBlock Text="Candidatures" Margin="0 5" FontSize="14" Foreground="White" />
                             <TextBlock Text="Entreprises" Margin="0 5" FontSize="14" Foreground="White" />
                         </StackPanel>
-                        <StackPanel Grid.Row="2">
+                        <StackPanel Grid.Row="2" Margin="0 140 0 0">
                             <TextBlock Text="Yannick Mezah" FontSize="14" Foreground="White"  />
                             <TextBlock Text="Etudiant" FontSize="14" Foreground="LightSlateGray"  />
                         </StackPanel>
